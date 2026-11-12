@@ -1,8 +1,8 @@
 on: 
-  workflow_dispatch: 
+  workflow_dispatch: #definimos el evento
 
 jobs: 
-  say_hello: 
-    runs-on: ubuntu-latest
+  say_hello: #identificador
+    runs-on: ubuntu-latest #el runner 
     steps: 
       - run: echo "Hello there!"
