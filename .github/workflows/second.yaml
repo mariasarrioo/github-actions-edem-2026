@@ -1,6 +1,6 @@
 name: Welcome to the party (second) 
 on: 
-  workflow_dispatch:
+  workflow_dispatch: #para ejecutar manualmente 
 jobs: 
   say_hello: 
     name: "Let's greet the user!"
@@ -9,7 +9,8 @@ jobs:
       - run: echo "Hello there!"
       - uses: actions/checkout@v3
       - run: cat ./list.txt
-        name: display contents of list.txt- run echo "I am step 4!"
+        name: display contents of list.txt
+      - run echo "I am step 4!"
 
 
 
